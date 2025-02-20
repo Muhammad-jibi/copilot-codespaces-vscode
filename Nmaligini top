@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveLink - Ты меня любишь?</title>
+    <style>
+        body { 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            margin-top: 50px; 
+            background-color: #ffccdd; /* Нежный розовый фон */
+            color: #e91e63; /* Романтический цвет текста */
+        }
+        h1 { 
+            font-size: 40px; 
+            font-weight: bold; 
+            color: #e91e63; 
+        }
+        button { 
+            font-size: 20px; 
+            padding: 15px 30px; 
+            margin: 10px; 
+            cursor: pointer; 
+            border-radius: 10px; 
+            border: 2px solid white;
+            background-color: #fff;
+            color: #e91e63;
+        }
+        button:hover {
+            background-color: #e91e63;
+            color: #fff;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        #message {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .whatsapp-container {
+            margin-top: 30px;
+        }
+        .whatsapp-container a {
+            color: #25d366;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .whatsapp-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function escapeButton() {
+            let button = document.getElementById("noButton");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.position = "absolute";
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+
+        function loveMessage() {
+            document.getElementById("yesButton").style.display = "none";  // Скрываем кнопку "Да"
+            document.getElementById("noButton").style.display = "none";   // Скрываем кнопку "Нет"
+            document.getElementById("message").innerHTML = "Я тебя тоже люблю! ❤️ Меня сени согиндим!";
+        }
+    </script>
+</head>
+<body>
+    <h1>Ты меня любишь?</h1>
+    <div>
+        <span class="heart">❤️</span>
+        <span>Я тебя люблю</span>
+        <span class="heart">❤️</span>
+    </div>
+    <button id="yesButton" onclick="loveMessage()">Да</button>
+    <button id="noButton" onmouseover="escapeButton()">Нет</button>
+    <div id="message"></div>
+
+    <div class="whatsapp-container">
+        <p>Поделись LoveLink с любимым человеком:</p>
+        <a id="whatsappLink" href="#" target="_blank">Отправить в WhatsApp 💚</a>
+    </div>
+
+    <script>
+        // Создаем ссылку для отправки по WhatsApp
+        document.addEventListener("DOMContentLoaded", function() {
+            let pageUrl = encodeURIComponent(window.location.href);
+            let message = encodeURIComponent("💕 Привет! Открой эту ссылку и ответь мне: Ты меня любишь? ❤️ " + pageUrl);
+            let whatsappLink = "https://wa.me/?text=" + message;
+            document.getElementById("whatsappLink").href = whatsappLink;
+        });
+    </script>
+</body>
+</html> <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveLink - Ты меня любишь?</title>
+    <style>
+        body { 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            margin-top: 50px; 
+            background-color: #ffccdd; /* Нежный розовый фон */
+            color: #e91e63; /* Романтический цвет текста */
+        }
+        h1 { 
+            font-size: 40px; 
+            font-weight: bold; 
+            color: #e91e63; 
+        }
+        button { 
+            font-size: 20px; 
+            padding: 15px 30px; 
+            margin: 10px; 
+            cursor: pointer; 
+            border-radius: 10px; 
+            border: 2px solid white;
+            background-color: #fff;
+            color: #e91e63;
+        }
+        button:hover {
+            background-color: #e91e63;
+            color: #fff;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        #message {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .whatsapp-container {
+            margin-top: 30px;
+        }
+        .whatsapp-container a {
+            color: #25d366;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .whatsapp-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function escapeButton() {
+            let button = document.getElementById("noButton");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.position = "absolute";
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+
+        function loveMessage() {
+            document.getElementById("yesButton").style.display = "none";  // Скрываем кнопку "Да"
+            document.getElementById("noButton").style.display = "none";   // Скрываем кнопку "Нет"
+            document.getElementById("message").innerHTML = "Я тебя тоже люблю! ❤️ Меня сени согиндим!";
+        }
+    </script>
+</head>
+<body>
+    <h1>Ты меня любишь?</h1>
+    <div>
+        <span class="heart">❤️</span>
+        <span>Я тебя люблю</span>
+        <span class="heart">❤️</span>
+    </div>
+    <button id="yesButton" onclick="loveMessage()">Да</button>
+    <button id="noButton" onmouseover="escapeButton()">Нет</button>
+    <div id="message"></div>
+
+    <div class="whatsapp-container">
+        <p>Поделись LoveLink с любимым человеком:</p>
+        <a id="whatsappLink" href="#" target="_blank">Отправить в WhatsApp 💚</a>
+    </div>
+
+    <script>
+        // Создаем ссылку для отправки по WhatsApp
+        document.addEventListener("DOMContentLoaded", function() {
+            let pageUrl = encodeURIComponent(window.location.href);
+            let message = encodeURIComponent("💕 Привет! Открой эту ссылку и ответь мне: Ты меня любишь? ❤️ " + pageUrl);
+            let whatsappLink = "https://wa.me/?text=" + message;
+            document.getElementById("whatsappLink").href = whatsappLink;
+        });
+    </script>
+</body>
+</html>
